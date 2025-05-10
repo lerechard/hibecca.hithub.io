@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Pastel Rainbow Background</title>
+  <title>Hi</title>
   <style>
     html, body {
       height: 100%;
@@ -30,11 +30,12 @@
       flex-direction: column;
       align-items: center;
       padding: 2rem;
+      width: 100%;
     }
 
     h1 {
       color: white;
-      font-size: 3rem;
+      font-size: 2.5rem;
       margin-bottom: 1.5rem;
       text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
     }
@@ -43,6 +44,7 @@
       background: white;
       padding: 2rem;
       border-radius: 1rem;
+      width: 90%;
       max-width: 600px;
       box-shadow: 0 0 20px rgba(0,0,0,0.1);
       text-align: left;
@@ -51,6 +53,16 @@
     .box p {
       line-height: 1.8;
       margin: 0;
+    }
+
+    @media (max-width: 400px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .box {
+        padding: 1.5rem;
+      }
     }
   </style>
 </head>
