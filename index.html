@@ -8,12 +8,14 @@
     html, body {
       height: 100%;
       margin: 0;
+      padding: 0;
       font-family: sans-serif;
       background: linear-gradient(270deg, 
         #ffd1dc, #ffe4b5, #c1f0f6, #d1cfff, #ffd1dc);
       background-size: 1000% 1000%;
       animation: gradientShift 30s ease infinite;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
     }
@@ -24,59 +26,37 @@
       100% { background-position: 0% 50%; }
     }
 
-    .container {
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 2rem;
-      width: 100%;
-    }
-
     h1 {
       color: white;
       font-size: 2.5rem;
-      margin-bottom: 1.5rem;
+      margin: 0 0 1rem 0;
       text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
     }
 
     .box {
       background: white;
-      padding: 2rem;
       border-radius: 1rem;
-      width: 90%;
-      max-width: 600px;
       box-shadow: 0 0 20px rgba(0,0,0,0.1);
-      text-align: left;
+      padding: 2rem;
+      width: 100%;
+      box-sizing: border-box;
     }
 
     .box p {
-      line-height: 1.8;
       margin: 0;
-    }
-
-    @media (max-width: 400px) {
-      h1 {
-        font-size: 2rem;
-      }
-
-      .box {
-        padding: 1.5rem;
-      }
+      line-height: 1.8;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Hi Becca!</h1>
-    <div class="box">
-      <p>
-        I'm currently an engineering student at Cal Poly SLO so can’t promise huge availability but I've been subscribed to your channel for a while and would love to help out! 
-        I have a lot of skills related to rapid prototyping and manufacturing but I also do video/photo/social media stuff. Currently I have Premiere Pro for editing video and Illustrator for design. 
-        I have a fast computer with lots of free storage and experience running social media accounts for clubs and other things. I also have taken classes on video production and currently work with ESPN as a camera operator for college sports broadcasting. 
-        Hope to hear from you soon! – Charlie
-      </p>
-    </div>
+  <h1>Hi Becca!</h1>
+  <div class="box">
+    <p>
+      I'm currently an engineering student at Cal Poly SLO so can’t promise huge availability but I've been subscribed to your channel for a while and would love to help out! 
+      I have a lot of skills related to rapid prototyping and manufacturing but I also do video/photo/social media stuff. Currently I have Premiere Pro for editing video and Illustrator for design. 
+      I have a fast computer with lots of free storage and experience running social media accounts for clubs and other things. I also have taken classes on video production and currently work with ESPN as a camera operator for college sports broadcasting. 
+      Hope to hear from you soon! – Charlie
+    </p>
   </div>
 </body>
 </html>
